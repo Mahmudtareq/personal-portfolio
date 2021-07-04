@@ -4,6 +4,7 @@ body{
     margin: 0;
 
 }
+/*for all section*/
 .section-design{
     display: flex;
     margin-bottom: 150px;
@@ -14,6 +15,7 @@ body{
     margin-left: 20px;
     display: inline-flex;
 }
+/*menu bar start*/
 .menu{
     width: 70%;
     overflow: hidden;
@@ -34,13 +36,16 @@ body{
 .menu ul li a:hover{
     box-shadow: 5px 10px 10px gray;
 }
+/*menu end*/
 /*---------------------------------------------*/
+/*for all div in this section*/
 .about{
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 5%;
 }
+/*for all images*/
 .image-1{
     border-radius: 50%;
     width: 100%;
@@ -55,25 +60,30 @@ h1{
     color: darkgoldenrod;
 }
 /*------------------------------------------------*/
+/*for all row*/
 .row{
     display: flex;
     margin: 20px;
 }
+/*box shadow design*/
 .box-shadow{
     padding-left: 30px;
     padding-right: 10px;
     box-shadow: 10px 10px 30px gray;
     border-radius: 15px;
 }
+/*link button design */
 .link-btn{
     text-decoration: none;
-    background-color: rgba(127, 255, 212, 0.363);
+    background-color: rgba(211, 236, 228, 0.363);
     margin-left: 10px;
-    padding: 10px 30px;
+    margin-right: 5px;
+    padding: 10px 10px;
     border-radius: 7px;
     border: 1px solid hotpink;
     transition: 1s;
 }
+
 .link-btn:hover{
     background-color: rgba(250, 235, 215, 0.548);
 }
@@ -81,8 +91,29 @@ h1{
 .bottom-section{
     margin-top: 100px;
 }
+/*all div clear*/
 section::after{
     content: ' ';
     display: table;
     clear: both;
 }
+/*responsive design*/
+@media (max-width:700px){
+    .link-btn{
+        display: block;
+        margin-top: 5px;
+    }
+}
+@media( max-width:700px) {
+    .menu{
+        width: 100%;
+        
+    }
+    
+}
+@media (max-width:700px) {
+    .about{
+        width: 100%;
+    } 
+}
+/*footer section*/
